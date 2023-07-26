@@ -218,10 +218,9 @@ import Footer from '../components/Footer.vue';
         <form class="w-full mt-16 md:mt-0 md:w-2/5">
             <div>
                 <div class="relative z-10 h-auto p-8 py-10 overflow-hidden bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7" id="">
-                    <h3 class="mb-6 text-2xl tracking-tight font-bold text-center" id="">Öffne das Buch...</h3>
+                    <h3 class="mb-2 text-2xl tracking-tight font-bold text-center" id="">Öffne das Buch...</h3>
                     <div class="block">
-                        <NuxtLink as="button" href="/register" class="w-full px-3 py-4 font-medium text-white bg-indigo-600 rounded-lg mb-3 focus:ring-4 focus:ring-blue-400">Anmelden</NuxtLink>
-                        <NuxtLink as="button" href="/login" class="w-full px-3 py-4 font-medium text-white bg-rose-600 rounded-lg mb-2 focus:ring-4 focus:ring-indigo-400">Ich habe schon einen Account</NuxtLink>
+                        <NuxtLink as="button" href="/login" class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400">Anmelden</NuxtLink>
                     </div>
                 </div>
             </div>

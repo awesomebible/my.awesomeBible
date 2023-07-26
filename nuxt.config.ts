@@ -9,8 +9,8 @@ export default defineNuxtConfig({
     supabase: {
       // Options
       redirect: {
-        login: "https://my-awesomebible.vercel.app/login",
-        callback: "https://my-awesomebible.vercel.app/home"
+        login: "/login",
+        callback: "/home"
       }
     }
   })

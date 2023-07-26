@@ -8,9 +8,5 @@ export default defineNuxtConfig({
     ],
     supabase: {
       // Options
-      redirect: {
-        login: "/login",
-        callback: "/home"
-      }
     }
   })

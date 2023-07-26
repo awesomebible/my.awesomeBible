@@ -6,4 +6,11 @@ export default defineNuxtConfig({
       'nuxt-icon'
       // https://github.com/nuxt-modules/color-mode
     ],
+    supabase: {
+      // Options
+      redirect: {
+        login: "https://my-awesomebible.vercel.app/login",
+        callback: "https://my-awesomebible.vercel.app/home"
+      }
+    }
   })

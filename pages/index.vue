@@ -1,5 +1,12 @@
-<script setup>
-import Footer from '../components/Footer.vue';
+<script setup lang="ts">
+const user = useSupabaseUser()
+const { auth } = useSupabaseAuthClient()
+
+watchEffect(() => {
+  if (user.value) {
+    navigateTo('/home')
+  }
+})
 </script>
 
 <template>

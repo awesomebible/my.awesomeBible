@@ -1,6 +1,8 @@
-# Nuxt 3 Minimal Starter
+# my.awesomeBible
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+> Mit my.awesomeBible beginnt eine neue Generation der Bibelarbeit. Deine neue Generation der Bibelarbeit.
+
+Eine Übersicht mit mehr Informationen zu my.awesomeBible findet sich in den [Docs](https://docs.awesomebible.de/myawesomebible/): https://docs.awesomebible.de/myawesomebible/
 
 ## Setup
 
@@ -17,26 +19,13 @@ npm install
 pnpm install
 ```
 
-## Development Server
+## 🧞 Commands
 
-Start the development server on http://localhost:3000
+All commands are run from the root of the project, from a terminal:
 
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:3000`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |

@@ -3,6 +3,7 @@ export default defineNuxtConfig({
       // https://github.com/nuxt-modules/supabase
       '@nuxtjs/supabase',
       '@nuxtjs/tailwindcss',
+      'nuxt-icon'
       // https://github.com/nuxt-modules/color-mode
     ],
   })

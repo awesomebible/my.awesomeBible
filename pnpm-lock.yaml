@@ -18,8 +18,8 @@ devDependencies:
     specifier: ^2.6.0
     version: 2.6.0(vue@3.3.4)(webpack@5.88.2)
   '@nuxtjs/supabase':
-    specifier: ^0.3.8
-    version: 0.3.8
+    specifier: ^1.0.0
+    version: 1.0.0
   nuxt:
     specifier: ^3.6.5
     version: 3.6.5(@types/node@20.4.4)
@@ -1163,11 +1163,11 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxtjs/supabase@0.3.8:
-    resolution: {integrity: sha512-MEhfgllJx7DQX4XrycGbnTmiW6JI1wLTaVTkDV9X90q+jfBz59d/uM2E6aj4XhLuJp4GN/THGpMg8k1RfuYxqQ==}
+  /@nuxtjs/supabase@1.0.0:
+    resolution: {integrity: sha512-z0bUWsIzsLEu6jHnS5T4x0TJUxn1EaNrLkXCFeOJrOnzCw2Q1sXMR3c8N9kO6DPLMt12ouPhaqdbfYpG/yugdA==}
     dependencies:
       '@nuxt/kit': 3.6.5
-      '@supabase/supabase-js': 2.26.0
+      '@supabase/supabase-js': 2.31.0
       defu: 6.1.2
       pathe: 1.1.1
     transitivePeerDependencies:
@@ -1360,8 +1360,8 @@ packages:
       - encoding
     dev: true
 
-  /@supabase/gotrue-js@2.45.0:
-    resolution: {integrity: sha512-ctHQqk9foMHvU9pyGXbSbyalmyJ4dkpK/72jIytH5DbXxawqPIjUmJ+Ww9yyJLFP6wCsjPdeYBI+NW070WESvg==}
+  /@supabase/gotrue-js@2.46.2:
+    resolution: {integrity: sha512-tLyZZNEb3St6Dxe671seLCzYWZ2DftSWWjPEfqAwW6kNOAr+Aw2uEIW0H3gEJxSIST+E+ly9lUBm/rGlfDWKPA==}
     dependencies:
       cross-fetch: 3.1.8
     transitivePeerDependencies:
@@ -1394,11 +1394,11 @@ packages:
       - encoding
     dev: true
 
-  /@supabase/supabase-js@2.26.0:
-    resolution: {integrity: sha512-RXmTPTobaYAwkSobadHZmEVLmzX3SGrtRZIGfLWnLv92VzBRrjuXn0a+bJqKl50GUzsyqPA+j5pod7EwMkcH5A==}
+  /@supabase/supabase-js@2.31.0:
+    resolution: {integrity: sha512-W9/4s+KnSUX67wJKBn/3yLq+ieycnMzVjK3nNTLX5Wko3ypNT/081l2iFYrf+nsLQ1CiT4mA92I3dxCy6CmxTg==}
     dependencies:
       '@supabase/functions-js': 2.1.2
-      '@supabase/gotrue-js': 2.45.0
+      '@supabase/gotrue-js': 2.46.2
       '@supabase/postgrest-js': 1.7.2
       '@supabase/realtime-js': 2.7.3
       '@supabase/storage-js': 2.5.1

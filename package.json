@@ -12,7 +12,7 @@
     "@iconify-json/heroicons-outline": "^1.1.6",
     "@iconify-json/mdi": "^1.1.53",
     "@nuxthq/ui": "^2.6.0",
-    "@nuxtjs/supabase": "^0.3.8",
+    "@nuxtjs/supabase": "^1.0.0",
     "nuxt": "^3.6.5",
     "nuxt-icon": "^0.4.2",
     "webpack": "^5.88.2"

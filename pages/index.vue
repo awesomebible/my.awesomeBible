@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const user = useSupabaseUser()
-const { auth } = useSupabaseAuthClient()
+const { auth } = useSupabaseClient()
 
 watchEffect(() => {
   if (user.value) {

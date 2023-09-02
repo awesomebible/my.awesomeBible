@@ -1,4 +1,5 @@
 # my.awesomeBible
+[![](https://img.shields.io/discord/940887747130957844?color=5865F2&logo=matrix)](https://matrix.to/#/#awesomebible-verse:matrix.org)
 
 > Mit my.awesomeBible beginnt eine neue Generation der Bibelarbeit. Deine neue Generation der Bibelarbeit.
 

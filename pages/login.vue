@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const user = useSupabaseUser()
-const { auth } = useSupabaseAuthClient()
+const { auth } = useSupabaseClient()
+
+const redirectTo = `${useRuntimeConfig().public.baseUrl}/confirm`
 
 watchEffect(() => {
   if (user.value) {
@@ -22,11 +24,11 @@ watchEffect(() => {
               <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                   Melde dich an
               </h1>
-              <button @click="auth.signInWithOAuth({ provider: 'discord' })" class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400" label="Discord">
+              <button @click="auth.signInWithOAuth({ provider: 'discord', options: { redirectTo } })" class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400" label="Discord">
                 <Icon name="fa-brands:discord" class="w-5 h-5 mr-3" />
                 Discord
               </button>
-              <button @click="auth.signInWithOAuth({ provider: 'google' })" class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400" label="Google">
+              <button @click="supabase.signInWithOAuth({ provider: 'google' })" class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400" label="Google">
                 <Icon name="fa-brands:google" class="w-5 h-5 mr-3" />
                 Google
               </button>

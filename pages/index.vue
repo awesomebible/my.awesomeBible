@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const user = useSupabaseUser()
-const { auth } = useSupabaseAuthClient()
+const { auth } = useSupabaseClient()
+
+const redirectTo = `${useRuntimeConfig().public.baseUrl}/confirm`
 
 watchEffect(() => {
   if (user.value) {
@@ -227,7 +229,14 @@ watchEffect(() => {
                 <div class="relative z-10 h-auto p-8 py-10 overflow-hidden bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7" id="">
                     <h3 class="mb-2 text-2xl tracking-tight font-bold text-center" id="">Öffne das Buch...</h3>
                     <div class="block">
-                        <NuxtLink as="button" href="/login" class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400">Anmelden</NuxtLink>
+                        <button @click="auth.signInWithOAuth({ provider: 'discord', options: { redirectTo } })" class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400" label="Discord">
+                            <Icon name="fa-brands:discord" class="w-5 h-5 mr-3" />
+                            Discord
+                        </button>
+                        <button @click="auth.signInWithOAuth({ provider: 'google', options: { redirectTo } })" class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400" label="Google">
+                            <Icon name="fa-brands:google" class="w-5 h-5 mr-3" />
+                            Google
+                        </button>
                     </div>
                 </div>
             </div>

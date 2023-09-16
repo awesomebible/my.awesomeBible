@@ -6,7 +6,15 @@ export default defineNuxtConfig({
       'nuxt-icon'
       // https://github.com/nuxt-modules/color-mode
     ],
+    runtimeConfig: {
+      public: {
+        baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+      },
+    },
     supabase: {
-      // Options
+      redirectOptions: {
+        login: '/',
+        callback: '/confirm'
+      },
     }
   })

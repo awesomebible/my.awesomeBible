@@ -14,32 +14,32 @@ watchEffect(() => {
 <template>
     <Head title="Home" />
 
-    <header class="w-full px-6 mb-12 antialiased bg-white select-none">
+    <header class="w-full px-6 mb-12 antialiased bg-base select-none">
     <div class="mx-auto max-w-7xl">
-                    <nav class="relative z-50 h-24">
+        <nav class="relative z-50 h-24">
             <div class="container relative flex flex-wrap items-center justify-between h-24 mx-auto font-medium border-b border-gray-200 lg:justify-center sm:px-4 md:px-2">
                 <NuxtLink as="a" href="/" class="w-1/4 py-4 pr-4 md:py-0">
-                    <span class="text-xl font-black leading-none text-gray-900 select-none logo">my.awesomeBible<span class="text-indigo-600">.</span></span>
+                    <span class="text-xl font-black leading-none text-primary-900 select-none logo">my.awesomeBible<span class="text-primary">.</span></span>
                 </NuxtLink>
                 <div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:w-3/4 md:absolute lg:text-base md:h-auto md:bg-transparent md:p-0 md:relative md:flex" :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
                     <div class="flex-col w-full h-auto overflow-hidden bg-white rounded-lg select-none md:bg-transparent md:rounded-none md:relative md:flex md:flex-row md:overflow-auto">
                         <a href="/" class="inline-flex items-center w-auto h-16 px-6 text-xl font-black leading-none text-gray-900 select-none md:hidden">my.awesomeBible<span class="text-indigo-600">.</span></a>
                         <div class="flex flex-col items-start justify-center w-full text-center md:w-2/3 md:mt-0 md:flex-row md:items-center">
-                            <a href="/" class="inline-block w-full px-6 py-2 mx-0 font-medium text-left text-indigo-600 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center">Home</a>
-                            <a href="#features" class="inline-block w-full px-6 py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center">Features</a>
-                            <a href="https://changelog.awesomebible.de" class="inline-block w-full px-6 py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center">Blog</a>
-                            <NuxtLink as="a" href="/kontakt" class="inline-block w-full px-6 py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center">Kontakt</NuxtLink>
+                            <a href="/" class="inline-block w-full px-6 py-2 mx-0 font-medium text-left text-primary-content-700 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center">Home</a>
+                            <a href="#features" class="inline-block w-full px-6 py-2 mx-0 font-medium text-left text-primary-content-700 md:w-auto md:px-0 md:mx-2 hover:text-primary lg:mx-3 md:text-center">Features</a>
+                            <a href="https://changelog.awesomebible.de" class="inline-block w-full px-6 py-2 mx-0 font-medium text-left text-primary-content-700 md:w-auto md:px-0 md:mx-2 hover:text-primary lg:mx-3 md:text-center">Blog</a>
+                            <NuxtLink as="a" href="/kontakt" class="inline-block w-full px-6 py-2 mx-0 font-medium text-left text-primary-content-700 md:w-auto md:px-0 md:mx-2 hover:text-primary lg:mx-3 md:text-center">Kontakt</NuxtLink>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
         <div class="container max-w-lg px-4 py-32 mx-auto text-left md:max-w-none md:text-center" id="">
-            <h1 class="text-5xl font-extrabold tracking-tight text-left text-gray-900 leading-tightest md:leading-10 md:text-center sm:leading-none md:text-6xl lg:text-7xl"><span class="inline md:block" id="">Deine Bibel</span> <span class="relative mt-2 text-transparent md:inline-block bg-clip-text bg-gradient-to-br from-purple-600 to-blue-500" id="">bekommt ein Upgrade!</span></h1>
-            <div class="mx-auto mt-5 text-gray-500 md:mt-12 md:max-w-lg md:text-center lg:text-lg" id="">Wir haben my.awesomeBible gebaut, damit du die Bibel auf deinem Level erleben kannst.</div>
+            <h1 class="text-5xl font-extrabold tracking-tight text-left text-primary-content leading-tightest md:leading-10 md:text-center sm:leading-none md:text-6xl lg:text-7xl"><span class="inline md:block" id="">Deine Bibel</span> <span class="relative mt-2 text-transparent md:inline-block bg-clip-text bg-gradient-to-br from-purple-600 to-blue-500" id="">bekommt ein Upgrade!</span></h1>
+            <div class="mx-auto mt-5 text-primary-content-500 md:mt-12 md:max-w-lg md:text-center lg:text-lg" id="">Wir haben my.awesomeBible gebaut, damit du die Bibel auf deinem Level erleben kannst.</div>
             <div class="flex flex-col items-center mt-12 text-center">
                 <span class="relative inline-flex w-full rounded-full shadow-sm md:w-auto">
-                    <a type="button" href="/#pricing" class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-lg md:w-auto hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 focus:ring-4 focus:ring-indigo-400">Worauf wartest du?</a>
+                    <a type="button" href="/#pricing" class="btn btn-lg btn-primary">Worauf wartest du?</a>
                 </span>
             </div>
         </div>
@@ -208,7 +208,7 @@ watchEffect(() => {
                         alle Bibelübersetzungen
                     </li>
                 </ul>
-                <NuxtLink as="a" href="/login" class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400">
+                <NuxtLink as="a" href="/login" class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none btn btn-lg btn-primary">
                     Los geht's!
                 </NuxtLink>
             </div>
@@ -229,11 +229,11 @@ watchEffect(() => {
                 <div class="relative z-10 h-auto p-8 py-10 overflow-hidden bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7" id="">
                     <h3 class="mb-2 text-2xl tracking-tight font-bold text-center" id="">Öffne das Buch...</h3>
                     <div class="block">
-                        <button @click="auth.signInWithOAuth({ provider: 'discord', options: { redirectTo } })" class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400" label="Discord">
+                        <button @click="auth.signInWithOAuth({ provider: 'discord', options: { redirectTo } })" class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 btn btn-lg btn-primary" label="Discord">
                             <Icon name="fa-brands:discord" class="w-5 h-5 mr-3" />
                             Discord
                         </button>
-                        <button @click="auth.signInWithOAuth({ provider: 'google', options: { redirectTo } })" class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400" label="Google">
+                        <button @click="auth.signInWithOAuth({ provider: 'google', options: { redirectTo } })" class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 btn btn-lg btn-primary" label="Google">
                             <Icon name="fa-brands:google" class="w-5 h-5 mr-3" />
                             Google
                         </button>

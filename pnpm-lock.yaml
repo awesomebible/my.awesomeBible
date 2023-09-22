@@ -18,8 +18,8 @@ devDependencies:
     specifier: ^2.7.0
     version: 2.7.0(vue@3.3.4)(webpack@5.88.2)
   '@nuxtjs/supabase':
-    specifier: ^1.1.0
-    version: 1.1.0
+    specifier: ^1.1.2
+    version: 1.1.2
   nuxt:
     specifier: ^3.7.3
     version: 3.7.3
@@ -1223,8 +1223,8 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxtjs/supabase@1.1.0:
-    resolution: {integrity: sha512-LW+cSpvnVEzKbrBp3EXN9300LdbGclO9lo+IWTBdLVEhEnY1JIoGDAB4YTJY818jkZ7gFMkMshQE7irYdtcT8A==}
+  /@nuxtjs/supabase@1.1.2:
+    resolution: {integrity: sha512-ElrzaEwNr17ldEBKZGpeFtkq2YFVeA+Qoa63L5YfgoY4fwRFImyoY9p/U+YXRhAtTb7pxjgkCTOThmQUaep0Mw==}
     dependencies:
       '@nuxt/kit': 3.7.3
       '@supabase/supabase-js': 2.33.1

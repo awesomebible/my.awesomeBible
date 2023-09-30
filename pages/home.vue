@@ -9,5 +9,5 @@ watchEffect(() => {
 })
 </script>
 <template>
-<h1>hallo welt</h1>
+  <h1>hallo welt</h1>
 </template>

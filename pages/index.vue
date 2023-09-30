@@ -208,9 +208,9 @@ watchEffect(() => {
                         alle Bibelübersetzungen
                     </li>
                 </ul>
-                <NuxtLink as="a" href="/login" class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none btn btn-lg btn-primary">
+                <a href="#get-started" class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none btn btn-lg btn-primary">
                     Los geht's!
-                </NuxtLink>
+                </a>
             </div>
         </div>
     </div>

@@ -21,11 +21,11 @@ export default defineNuxtConfig({
       locales: [
         {
           code: 'de',
-          file: 'de.ts'
+          file: 'de.json'
         },
         {
           code: 'en',
-          file: 'en.ts'
+          file: 'en.json'
         },
       ],
       lazy: true,

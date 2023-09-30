@@ -1,4 +1,8 @@
 <script setup lang="ts">
+const { t } = useI18n({
+  useScope: 'local'
+})
+
 const user = useSupabaseUser()
 const { auth } = useSupabaseClient()
 
@@ -35,11 +39,11 @@ watchEffect(() => {
             </div>
         </nav>
         <div class="container max-w-lg px-4 py-32 mx-auto text-left md:max-w-none md:text-center" id="">
-            <h1 class="text-5xl font-extrabold tracking-tight text-left text-gray-900 leading-tightest md:leading-10 md:text-center sm:leading-none md:text-6xl lg:text-7xl"><span class="inline md:block" id="">Deine Bibel</span> <span class="relative mt-2 text-transparent md:inline-block bg-clip-text bg-gradient-to-br from-purple-600 to-blue-500" id="">bekommt ein Upgrade!</span></h1>
-            <div class="mx-auto mt-5 text-gray-500 md:mt-12 md:max-w-lg md:text-center lg:text-lg" id="">Wir haben my.awesomeBible gebaut, damit du die Bibel auf deinem Level erleben kannst.</div>
+            <h1 class="text-5xl font-extrabold tracking-tight text-left text-gray-900 leading-tightest md:leading-10 md:text-center sm:leading-none md:text-6xl lg:text-7xl"><span class="inline md:block" id="">{{ t('your_bible') }}</span> <span class="relative mt-2 text-transparent md:inline-block bg-clip-text bg-gradient-to-br from-purple-600 to-blue-500" id="">{{ t('gets_an_upgrade') }}</span></h1>
+            <div class="mx-auto mt-5 text-gray-500 md:mt-12 md:max-w-lg md:text-center lg:text-lg" id="">{{ t('home_intro_text') }}</div>
             <div class="flex flex-col items-center mt-12 text-center">
                 <span class="relative inline-flex w-full rounded-full shadow-sm md:w-auto">
-                    <a type="button" href="/#pricing" class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-lg md:w-auto hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 focus:ring-4 focus:ring-indigo-400">Worauf wartest du?</a>
+                    <a type="button" href="/#pricing" class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-lg md:w-auto hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 focus:ring-4 focus:ring-indigo-400">{{ t('home_call_to_action') }}</a>
                 </span>
             </div>
         </div>
@@ -47,18 +51,17 @@ watchEffect(() => {
 </header>
 <section class="py-20 bg-white dark:bg-slate-800" id="">
     <div class="container max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold tracking-tight text-center dark:text-white" id="features">Was wir drauf haben...</h2>
-        <p class="mt-2 text-lg text-center text-gray-700 dark:text-gray-300" id="">Eine Zusammenfassung von den wichtigsten Funktionen die my.awesomeBible bietet:</p>
+        <h2 class="text-4xl font-bold tracking-tight text-center dark:text-white" id="features">{{  t('home_features_title') }}</h2>
+        <p class="mt-2 text-lg text-center text-gray-700 dark:text-gray-300" id="">{{ t('home_features_subtitle') }}</p>
         <div class="grid grid-cols-4 gap-8 mt-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0" id="">
-
             <div class="relative flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 overflow-hidden bg-gray-100 sm:rounded-xl bg-gradient-to-br from-purple-200 to-blue-200" id="">
                 <div class="p-3 text-white bg-indigo-500 rounded-full" id="">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                     </svg>
                 </div>
-                <h4 class="text-xl font-medium text-black">Lies!</h4>
-                <p class="text-base text-center font-sans text-gray-700">Lies die Bibel so wie <b>du</b> möchtest: Lightmode, Darkmode, <span class="font-comic">Comic Sans</span> - alles ist dir überlassen.</p>
+                <h4 class="text-xl font-medium text-black">{{ t('home_feature1_title') }}</h4>
+                <p class="text-base text-center font-sans text-gray-700">{{ t('home_feature1_subtitle') }}</p>
             </div>
 
             <div class="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl bg-gradient-to-br from-red-200 to-orange-200">
@@ -67,8 +70,8 @@ watchEffect(() => {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
                     </svg>
                 </div>
-                <h4 class="text-xl font-medium text-black" id="">Merke!</h4>
-                <p class="text-base text-center font-sans text-gray-700" id="">Merke dir Verse, damit du nie wieder Gottes Botschaft an dich vergisst.</p>
+                <h4 class="text-xl font-medium text-black" id="">{{ t('home_feature2_title') }}</h4>
+                <p class="text-base text-center font-sans text-gray-700" id="">{{ t('home_feature2_subtitle') }}</p>
             </div>
 
             <div class="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl bg-gradient-to-br from-green-200 to-blue-200">
@@ -77,8 +80,8 @@ watchEffect(() => {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
                     </svg>
                 </div>
-                <h4 class="text-xl font-medium text-black" id="">Teile</h4>
-                <p class="text-base text-center font-sans text-gray-700" id="">Wir haben es dir einfach gemacht, deine Gedanken mit anderen zu teilen.</p>
+                <h4 class="text-xl font-medium text-black" id="">{{ t('home_feature3_title') }}</h4>
+                <p class="text-base text-center font-sans text-gray-700" id="">{{ t('home_feature3_subtitle') }}</p>
             </div>
 
             <div class="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl bg-gradient-to-br from-pink-200 to-purple-200" id="">
@@ -87,11 +90,9 @@ watchEffect(() => {
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 </div>
-                <h4 class="text-xl font-medium text-black" id="">Unabhängig</h4>
+                <h4 class="text-xl font-medium text-black" id="">{{ t('home_feature4_title') }}</h4>
                 <p class="text-base text-center font-sans text-gray-700" id="">
-                    my.awesomeBible gehört keiner großen Firma und finanziert sich komplett von selbst.
-                    Wir müssen uns nicht anpassen, wir können auf unsere <a href="https://matrix.to/#/#awesomebible:matrix.org" class="text-base text-center text-gray-700 hover:text-blue-600 underline decoration-blue-500 decoration-2 hover:decoration-wavy">Community</a> hören.
-                    Wir können unsere Vision ausleben.
+                {{ t('home_feature4_subtitle') }}
                 </p>
             </div>
 
@@ -101,9 +102,8 @@ watchEffect(() => {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
                 </div>
-                <h4 class="text-xl font-medium text-black" id="">Sicher</h4>
-                <p class="text-base text-center text-gray-700 font-sans">Wir werden deine Daten nie an irgendeine Firma verkaufen, und du kannst sie jederzeit exportieren.</p>
-                <p class="text-base text-center text-gray-700 font-sans">Deine Daten sind <b class="font-sans">deine Daten</b>, und dass ist auch gut so.</p>
+                <h4 class="text-xl font-medium text-black" id="">{{ t('home_feature5_title') }}</h4>
+                <p class="text-base text-center text-gray-700 font-sans">{{ t('home_feature5_subtitle') }}</p>
             </div>
 
             <div class="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl bg-gradient-to-br from-yellow-200 to-yellow-500">
@@ -112,9 +112,9 @@ watchEffect(() => {
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                 </div>
-                <h4 class="text-xl font-medium text-black" id="">Quelloffen</h4>
-                <p class="text-base text-center text-gray-700 font-sans" id="">my.awesomeBible ist komplett quelloffen. Das bedeutet, dass jeder Sicherheitslücken im Code finden und neue Features hinzufügen kann.</p>
-                <a class="text-base text-center text-gray-700 hover:text-blue-600 underline decoration-blue-500 decoration-2 hover:decoration-wavy" href="https://codeberg.org/awesomebible/my-frontend"> -> Codeberg </a>
+                <h4 class="text-xl font-medium text-black" id="">{{ t('home_feature6_title') }}</h4>
+                <p class="text-base text-center text-gray-700 font-sans" id="">{{ t('home_feature6_subtitle') }}</p>
+                <a class="text-base text-center text-gray-700 hover:text-blue-600 underline decoration-blue-500 decoration-2 hover:decoration-wavy" href="https://github.com/awesomebible/my.awesomebible-nuxt"> -> Github </a>
             </div>
         </div>
     </div>

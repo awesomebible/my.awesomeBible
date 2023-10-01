@@ -1,8 +1,6 @@
 # my.awesomeBible
 [![Discord](https://img.shields.io/discord/940887747130957844?color=5865F2&logo=discord&logoColor=white)](https://chat.awesomebible.de)
 
-Übersetzungen von [Weblate](https://weblate.org)
-
 > Mit my.awesomeBible eine neue Generation der Bibelarbeit. Deine neue Generation der Bibelarbeit.
 
 Eine Übersicht mit mehr Informationen zu my.awesomeBible findet sich in den [Docs](https://docs.awesomebible.de/myawesomebible/): https://docs.awesomebible.de/myawesomebible/

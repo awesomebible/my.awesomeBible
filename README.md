@@ -1,5 +1,5 @@
 # my.awesomeBible
-[![Discord](https://img.shields.io/discord/940887747130957844?color=5865F2&logo=discord&logoColor=white)](https://chat.awesomebible.de)
+[![Discord](https://img.shields.io/discord/940887747130957844?color=5865F2&logo=discord&logoColor=white)](https://chat.awesomebible.de) [![](https://hosted.weblate.org/widget/myawesomebible/frontend/svg-badge.svg)](https://hosted.weblate.org/engage/myawesomebible/)
 
 > Mit my.awesomeBible eine neue Generation der Bibelarbeit. Deine neue Generation der Bibelarbeit.
 
@@ -30,3 +30,10 @@ All commands are run from the root of the project, from a terminal:
 | `npm run dev`             | Starts local dev server at `localhost:3000`      |
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
+
+## Übersetzung
+Für die Übersetzung von my.awesomeBible nutzen wir [Weblate](https://hosted.weblate.org/engage/myawesomebible/).
+
+<a href="https://hosted.weblate.org/engage/myawesomebible/">
+  <img src="https://hosted.weblate.org/widget/myawesomebible/frontend/287x66-white.png" alt="Übersetzungsstatus" />
+</a>

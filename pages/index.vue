@@ -120,44 +120,40 @@ watchEffect(() => {
     </div>
 </section>
 <section class="relative py-16 bg-white dark:bg-slate-800 min-w-screen animation-fade animation-delay">
-    <div class="container px-0 px-8 mx-auto sm:px-12 xl:px-5">
+    <div class="container px-8 mx-auto sm:px-12 xl:px-5">
         <p class="text-xs font-bold text-left text-pink-500 uppercase sm:mx-6 sm:text-center sm:text-normal sm:font-bold">
-            Hast du Fragen? Wir haben Antworten!</p>
+            {{ t('home_faq_subheading') }}</p>
         <h3 class="mt-1 text-2xl font-bold text-left text-gray-800 dark:text-gray-200 sm:mx-6 sm:text-3xl md:text-4xl lg:text-5xl sm:text-center sm:mx-0">
-            Hier einiges, was du dich Fragen könntest:</h3>
+            {{ t('home_faq_heading') }}
+        </h3>
 
         <div
             class="w-full px-6 py-6 mx-auto mt-10 bg-white dark:bg-blue-900 border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
-            <h3 class="text-lg font-bold text-purple-500 dark:text-purple-200 sm:text-xl md:text-2xl">Wo liegen meine Daten?</h3>
-            <p class="mt-2 text-base font-sans text-gray-600 dark:text-gray-200 sm:text-lg md:text-normal">Deine Daten liegen in Deutschland. Einerseits garantiert das schnelle Reaktionszeiten (Ping), andererseits garantiert es, dass deine Daten mit EU Datenschutzgesetzen geschützt sind.
-                Um noch ein Stück genauer zu werden: Deine Daten liegen auf einem Server von <a href="https://stuxhost.com" class="font-sans hover:text-violet-600 underline decoration-violet-500 decoration-2 hover:decoration-wavy">Stuxhost</a> in Falkenstein.
+            <h3 class="text-lg font-bold text-purple-500 dark:text-purple-200 sm:text-xl md:text-2xl">{{ t('home_faq1_question') }}</h3>
+            <p class="mt-2 text-base font-sans text-gray-600 dark:text-gray-200 sm:text-lg md:text-normal">
+                {{ t('home_faq1_answer') }}
             </p>
         </div>
         <div
             class="w-full px-6 py-6 mx-auto mt-10 bg-white dark:bg-blue-900 border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
-            <h3 class="text-lg font-bold text-purple-500 dark:text-purple-200 sm:text-xl md:text-2xl">Wie finanziert ihr euch?</h3>
-            <p class="mt-2 text-base font-sans text-gray-600 dark:text-gray-200 sm:text-lg md:text-normal">Wir finanzieren uns aktuell ausschließlich aus eigenem Geld, diese Entscheidung haben wir getroffen, weil wir eine <span class="font-bold">wirklich</span> kostenlose und offene Bibelapp bauen wollen. <br>
-            Mehr über Geld, und wie es weiter geht findest du <a class="font-sans hover:text-violet-600 underline decoration-violet-500 decoration-2 hover:decoration-wavy" href="https://changelog.awesomebible.de/post/vision/">hier</a>. </p>
+            <h3 class="text-lg font-bold text-purple-500 dark:text-purple-200 sm:text-xl md:text-2xl">{{ t('home_faq2_question') }}</h3>
+            <p class="mt-2 text-base font-sans text-gray-600 dark:text-gray-200 sm:text-lg md:text-normal">
+                {{ t('home_faq2_answer') }}
+                <a class="font-sans hover:text-violet-600 underline decoration-violet-500 decoration-2 hover:decoration-wavy" href="https://changelog.awesomebible.de/post/vision/">
+                    {{ t('home_faq2_link') }}
+                </a>
+            </p>
         </div>
         <div
             class="w-full px-6 py-6 mx-auto mt-10 bg-white dark:bg-blue-900 border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
             <h3 class="text-lg font-bold text-purple-500 dark:text-purple-200 sm:text-xl md:text-2xl">Ist my.awesomeBible unsicher weil der Quellcode offen liegt?</h3>
-            <p class="mt-2 text-base font-sans text-gray-600 dark:text-gray-200 sm:text-lg md:text-normal">Nein. Das ist ein Mythos - sogar das Gegenteil ist der Fall. Wäre der Quellcode nicht offen, dann wäre allein ich für die Sicherheit verantwortlich. 
-                Da er aber quelloffen ist, kann jeder Fehler finden und ausnutzen - aber genau so gut können sie gemeldet und behoben werden.</p>
-        </div>
-        <div
-            class="w-full px-6 py-6 mx-auto mt-10 bg-white dark:bg-blue-900 border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
-            <h3 class="text-lg font-bold text-purple-500 dark:text-purple-200 sm:text-xl md:text-2xl">Wer steht hinter my.awesomeBible und awesomeBible?</h3>
-            <p class="mt-2 text-base font-sans text-gray-600 dark:text-gray-200 sm:text-lg md:text-normal">Hi. 👋 Ich bin Benjamin Hartmann!
-                Meine Hobbys sind <a href="https://awesomebible.de" class="font-sans hover:text-violet-600 underline decoration-violet-500 decoration-2 hover:decoration-wavy">Texte schreiben</a>, <a href="https://codeberg.org/benjaminwolkchen" class="font-sans hover:text-violet-600 underline decoration-violet-500 decoration-2 hover:decoration-wavy">programmieren</a> und in der Natur rumlungern. 
-                Ich habe my.awesomeBible gebaut, weil ich keine Bibelapp gefunden habe, die die Features hat, die ich brauche - und jetzt bin ich hier. Der Weg mit Gott ist ein richtiges Abenteuer - und ich möchte, dass auch andere davon erfahren.</p>
+            <p class="mt-2 text-base font-sans text-gray-600 dark:text-gray-200 sm:text-lg md:text-normal">{{ t('home_faq3_answer') }}</p>
         </div>
         <div id="contact"
         class="w-full px-6 py-6 mx-auto mt-10 bg-white dark:bg-blue-900 border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
-        <h3 class="text-lg font-bold text-purple-500 dark:text-purple-200 sm:text-xl md:text-2xl">Du hast noch mehr Fragen?</h3>
-        <p class="mt-2 text-base font-sans text-gray-600 dark:text-gray-200 sm:text-lg md:text-normal">Schreib mir! Ich bin per E-Mail erreichbar: 
-            <a href="mailto:hi@awesomebible.de" class="font-sans hover:text-violet-600 underline decoration-violet-500 decoration-2 hover:decoration-wavy">benjamin@awesomebible.de</a> oder tritt unserem <a href="https://matrix.to/#/#awesomebible:matrix.org" class="font-sans hover:text-violet-600 underline decoration-violet-500 decoration-2 hover:decoration-wavy">Matrix Space</a> bei und lass dein Feedback da.
-            Ich freue mich auf deine Nachricht! ❤
+        <h3 class="text-lg font-bold text-purple-500 dark:text-purple-200 sm:text-xl md:text-2xl">{{ t('home_faq4_question') }}</h3>
+        <p class="mt-2 text-base font-sans text-gray-600 dark:text-gray-200 sm:text-lg md:text-normal">
+            {{ t('home_faq4_answer') }} <a href="" class="font-sans hover:text-violet-600 underline decoration-violet-500 decoration-2 hover:decoration-wavy">Discord</a> & <a href="" class="font-sans hover:text-violet-600 underline decoration-violet-500 decoration-2 hover:decoration-wavy">Mastodon</a>.
         </p>
     </div>
     </div>
@@ -165,51 +161,51 @@ watchEffect(() => {
 <section class="py-8 leading-7 text-gray-900 bg-white dark:bg-slate-800 sm:py-12 md:py-16 lg:py-24" id="pricing">
     <div class="box-border px-4 mx-auto border-solid sm:px-6 md:px-6 lg:px-8 max-w-7xl">
         <div class="flex flex-col items-center leading-7 text-center text-gray-900 border-0 border-gray-200">
-            <h2 class="box-border m-0 text-3xl font-semibold leading-tight tracking-tight text-black dark:text-gray-200 border-solid sm:text-4xl md:text-5xl" id="">Wir geben nicht viel auf komplizierte Preise.</h2>
-            <p class="box-border mt-2 text-xl text-gray-900 dark:text-gray-300 border-solid sm:text-2xl" id="">my.awesomeBible ist kostenlos und wird es auch immer bleiben.</p>
+            <h2 class="box-border m-0 text-3xl font-semibold leading-tight tracking-tight text-black dark:text-gray-200 border-solid sm:text-4xl md:text-5xl" id="">{{ t('home_pricing_heading') }}</h2>
+            <p class="box-border mt-2 text-xl text-gray-900 dark:text-gray-300 border-solid sm:text-2xl" id="">{{ t('home_pricing_subheading') }}</p>
         </div>
         <div class="grid grid-cols-1 gap-4 mt-4 leading-7 text-gray-900 border-0 border-gray-200 sm:mt-6 sm:gap-6 md:mt-8 md:gap-0">
             
             <!-- Price 1 -->
             <div class="box-border flex flex-col items-center max-w-md p-4 mx-auto my-0 border-4 border-indigo-600 border-solid rounded-md sm:p-6 md:px-8 md:py-16">
-                <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black dark:text-gray-200 border-0 border-gray-200 sm:text-3xl md:text-4xl" id="">Kostenlos</h3>
+                <h3 class="m-0 text-2xl font-semibold leading-tight tracking-tight text-black dark:text-gray-200 border-0 border-gray-200 sm:text-3xl md:text-4xl" id="">{{t('home_price_free')}}</h3>
                 <div class="flex items-end mt-6 leading-7 text-gray-900 border-0 border-gray-200">
-                    <p class="box-border m-0 text-6xl dark:text-gray-300 font-semibold leading-none border-solid" id="">€0</p>
+                    <p class="box-border m-0 text-6xl dark:text-gray-300 font-semibold leading-none border-solid" id="">{{ t('home_price') }}</p>
                     <p class="box-border m-0 border-solid dark:text-gray-300" style="border-image: initial;">
-                        / Monat
+                        / {{ t('home_price_month') }}
                     </p>
                 </div>
-                <p class="mt-6 mb-5 text-base leading-normal text-left text-gray-900 dark:text-gray-300 border-0 border-gray-200" id="">Für alle. Wir sind offen und dankbar für neue Nutzer!</p>
+                <p class="mt-6 mb-5 text-base leading-normal text-left text-gray-900 dark:text-gray-300 border-0 border-gray-200" id="">{{ t('home_price_subtitle') }}</p>
                 <ul class="flex-1 p-0 mt-4 leading-7 text-gray-900 border-0 border-gray-200">
                     <li class="inline-flex items-center w-full mb-2 ml-5 font-semibold dark:text-gray-300 text-left border-solid" id="">
                         <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-indigo-600 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        alle Features
+                        {{ t('home_price_all_features') }}
                     </li>
                     <li class="inline-flex items-center w-full mb-2 ml-5 font-semibold dark:text-gray-300 text-left border-solid" id="">
                         <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-indigo-600 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
                         <svg alt="unendlich" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 leading-7 sm:h-5 sm:w-5 md:h-6 md:w-6 dark:fill-gray-300" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M494.9 96.01c-38.78 0-75.22 15.09-102.6 42.5L320 210.8L247.8 138.5c-27.41-27.41-63.84-42.5-102.6-42.5C65.11 96.01 0 161.1 0 241.1v29.75c0 80.03 65.11 145.1 145.1 145.1c38.78 0 75.22-15.09 102.6-42.5L320 301.3l72.23 72.25c27.41 27.41 63.84 42.5 102.6 42.5C574.9 416 640 350.9 640 270.9v-29.75C640 161.1 574.9 96.01 494.9 96.01zM202.5 328.3c-15.31 15.31-35.69 23.75-57.38 23.75C100.4 352 64 315.6 64 270.9v-29.75c0-44.72 36.41-81.13 81.14-81.13c21.69 0 42.06 8.438 57.38 23.75l72.23 72.25L202.5 328.3zM576 270.9c0 44.72-36.41 81.13-81.14 81.13c-21.69 0-42.06-8.438-57.38-23.75l-72.23-72.25l72.23-72.25c15.31-15.31 35.69-23.75 57.38-23.75C539.6 160 576 196.4 576 241.1V270.9z"/></svg>
-                        viele Notizen
+                        {{ t('home_price_endless_notes') }}
                     </li>
                     <li class="inline-flex items-center w-full mb-2 ml-5 font-semibold dark:text-gray-300 text-left border-solid">
                         <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-indigo-600 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
                         <svg alt="unendlich" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 leading-7 sm:h-5 sm:w-5 md:h-6 md:w-6 dark:fill-gray-300" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M494.9 96.01c-38.78 0-75.22 15.09-102.6 42.5L320 210.8L247.8 138.5c-27.41-27.41-63.84-42.5-102.6-42.5C65.11 96.01 0 161.1 0 241.1v29.75c0 80.03 65.11 145.1 145.1 145.1c38.78 0 75.22-15.09 102.6-42.5L320 301.3l72.23 72.25c27.41 27.41 63.84 42.5 102.6 42.5C574.9 416 640 350.9 640 270.9v-29.75C640 161.1 574.9 96.01 494.9 96.01zM202.5 328.3c-15.31 15.31-35.69 23.75-57.38 23.75C100.4 352 64 315.6 64 270.9v-29.75c0-44.72 36.41-81.13 81.14-81.13c21.69 0 42.06 8.438 57.38 23.75l72.23 72.25L202.5 328.3zM576 270.9c0 44.72-36.41 81.13-81.14 81.13c-21.69 0-42.06-8.438-57.38-23.75l-72.23-72.25l72.23-72.25c15.31-15.31 35.69-23.75 57.38-23.75C539.6 160 576 196.4 576 241.1V270.9z"/></svg>
-                        viele Markierungen
+                        {{ t('home_price_endless_higlights') }}
                     </li>
                     <li class="inline-flex items-center w-full mb-2 ml-5 font-semibold dark:text-gray-300 text-left border-solid">
                         <svg class="w-5 h-5 mr-2 font-semibold leading-7 text-indigo-600 sm:h-5 sm:w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                         </svg>
-                        alle Bibelübersetzungen
+                        {{ t('home_price_bibleversions') }}
                     </li>
                 </ul>
                 <NuxtLink as="a" href="/login" class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400">
-                    Los geht's!
+                    {{ t('home_price_cta') }}
                 </NuxtLink>
             </div>
         </div>
@@ -221,13 +217,13 @@ watchEffect(() => {
 
             <div class="w-full space-y-5 md:w-3/5 md:pr-16">
                 <p class="font-medium text-blue-500 uppercase" id=""></p>
-                <h2 class="text-2xl font-extrabold tracking-tight leading-none text-black dark:text-gray-200 sm:text-3xl md:text-5xl" id="">Fang jetzt dein Abenteuer mit der Bibel an!</h2>
-                <p class="text-xl text-gray-600 dark:text-gray-300 md:pr-16" id="">Wir wünschen dir einen schönen Aufenthalt! 🥰</p>
+                <h2 class="text-2xl font-extrabold tracking-tight leading-none text-black dark:text-gray-200 sm:text-3xl md:text-5xl" id="">{{ t('home_footer_heading') }}</h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 md:pr-16" id="">{{ t('home_footer_subheading') }}</p>
             </div>
         <form class="w-full mt-16 md:mt-0 md:w-2/5">
             <div>
                 <div class="relative z-10 h-auto p-8 py-10 overflow-hidden bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7" id="">
-                    <h3 class="mb-2 text-2xl tracking-tight font-bold text-center" id="">Öffne das Buch...</h3>
+                    <h3 class="mb-2 text-2xl tracking-tight font-bold text-center" id="">{{ t('home_login_heading') }}</h3>
                     <div class="block">
                         <button @click="auth.signInWithOAuth({ provider: 'discord', options: { redirectTo } })" class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400" label="Discord">
                             <Icon name="fa-brands:discord" class="w-5 h-5 mr-3" />

@@ -35,5 +35,5 @@ All commands are run from the root of the project, from a terminal:
 Für die Übersetzung von my.awesomeBible nutzen wir [Weblate](https://hosted.weblate.org/engage/myawesomebible/).
 
 <a href="https://hosted.weblate.org/engage/myawesomebible/">
-  <img src="https://hosted.weblate.org/widget/myawesomebible/frontend/multi-auto.svg" alt="Übersetzungsstatus" />
+  <img src="https://hosted.weblate.org/widget/myawesomebible/frontend/287x66-white.png" alt="Übersetzungsstatus" />
 </a>

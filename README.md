@@ -1,5 +1,5 @@
 # my.awesomeBible
-[![Discord](https://img.shields.io/discord/940887747130957844?color=5865F2&logo=discord&logoColor=white)](https://chat.awesomebible.de) [![](https://hosted.weblate.org/widget/myawesomebible/frontend/svg-badge.svg)](https://hosted.weblate.org/engage/myawesomebible/)
+[![Discord](https://img.shields.io/discord/940887747130957844?color=5865F2&logo=discord&logoColor=white)](https://chat.awesomebible.de) [![](https://translate.codeberg.org/widget/my-awesomebible/frontend/svg-badge.svg)](https://translate.codeberg.org/engage/my-awesomebible//)
 
 > Mit my.awesomeBible eine neue Generation der Bibelarbeit. Deine neue Generation der Bibelarbeit.
 
@@ -32,8 +32,8 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 
 ## Übersetzung
-Für die Übersetzung von my.awesomeBible nutzen wir [Weblate](https://hosted.weblate.org/engage/myawesomebible/).
+Für die Übersetzung von my.awesomeBible nutzen wir [Weblate](https://translate.codeberg.org/engage/my-awesomebible/).
 
-<a href="https://hosted.weblate.org/engage/myawesomebible/">
-  <img src="https://hosted.weblate.org/widget/myawesomebible/frontend/287x66-white.png" alt="Übersetzungsstatus" />
+<a href="https://translate.codeberg.org/engage/my-awesomebible/">
+  <img src="https://translate.codeberg.org/widget/my-awesomebible/frontend/287x66-white.png" alt="Übersetzungsstatus" />
 </a>

@@ -4,7 +4,8 @@ export default defineNuxtConfig({
       '@nuxtjs/supabase',
       '@nuxtjs/tailwindcss',
       'nuxt-icon',
-      '@nuxtjs/i18n'
+      '@nuxtjs/i18n',
+      '@vite-pwa/nuxt'
     ],
     runtimeConfig: {
       public: {
@@ -31,5 +32,44 @@ export default defineNuxtConfig({
       lazy: true,
       langDir: 'lang',
       defaultLocale: 'de'
-    }
+    },
+    pwa: {
+      registerType: 'autoUpdate',
+      manifest: {
+        name: 'my.awesomeBible',
+        short_name: 'Bibel',
+        theme_color: '#7C3AED',
+        icons: [
+          {
+            src: 'pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
+        ],
+      },
+      workbox: {
+        navigateFallback: '/',
+        globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+      },
+      client: {
+        installPrompt: true,
+      },
+      devOptions: {
+        enabled: true,
+        suppressWarnings: true,
+        navigateFallbackAllowlist: [/^\/$/],
+        type: 'module',
+      },
+    },
   })

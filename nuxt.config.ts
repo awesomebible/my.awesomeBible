@@ -3,8 +3,8 @@ export default defineNuxtConfig({
       // https://github.com/nuxt-modules/supabase
       '@nuxtjs/supabase',
       '@nuxtjs/tailwindcss',
-      'nuxt-icon'
-      // https://github.com/nuxt-modules/color-mode
+      'nuxt-icon',
+      '@nuxtjs/i18n'
     ],
     runtimeConfig: {
       public: {
@@ -16,5 +16,20 @@ export default defineNuxtConfig({
         login: '/',
         callback: '/confirm'
       },
+    },
+    i18n: {
+      locales: [
+        {
+          code: 'de',
+          file: 'de.json'
+        },
+        {
+          code: 'en',
+          file: 'en.json'
+        },
+      ],
+      lazy: true,
+      langDir: 'lang',
+      defaultLocale: 'de'
     }
   })

@@ -14,7 +14,7 @@
     "@nuxthq/ui": "^2.7.0",
     "@nuxtjs/i18n": "8.0.0-rc.5",
     "@nuxtjs/pwa": "^3.3.5",
-    "@nuxtjs/supabase": "^1.1.2",
+    "@nuxtjs/supabase": "^1.1.3",
     "@vite-pwa/nuxt": "^0.1.1",
     "nuxt": "^3.7.4",
     "nuxt-icon": "^0.5.0",

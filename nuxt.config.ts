@@ -4,7 +4,6 @@ export default defineNuxtConfig({
       '@nuxtjs/supabase',
       '@nuxtjs/tailwindcss',
       'nuxt-icon',
-      '@nuxtjs/i18n',
       '@vite-pwa/nuxt'
     ],
     runtimeConfig: {

@@ -17,21 +17,6 @@ export default defineNuxtConfig({
         callback: '/confirm'
       },
     },
-    i18n: {
-      locales: [
-        {
-          code: 'de',
-          file: 'de.json'
-        },
-        {
-          code: 'en',
-          file: 'en.json'
-        },
-      ],
-      lazy: true,
-      langDir: 'lang',
-      defaultLocale: 'de'
-    },
     pwa: {
       registerType: 'autoUpdate',
       manifest: {

@@ -4,7 +4,6 @@ export default defineNuxtConfig({
       '@nuxtjs/supabase',
       '@nuxtjs/tailwindcss',
       'nuxt-icon',
-      '@nuxtjs/i18n',
       '@vite-pwa/nuxt'
     ],
     runtimeConfig: {
@@ -17,21 +16,6 @@ export default defineNuxtConfig({
         login: '/',
         callback: '/confirm'
       },
-    },
-    i18n: {
-      locales: [
-        {
-          code: 'de',
-          file: 'de.json'
-        },
-        {
-          code: 'en',
-          file: 'en.json'
-        },
-      ],
-      lazy: true,
-      langDir: 'lang',
-      defaultLocale: 'de'
     },
     pwa: {
       registerType: 'autoUpdate',

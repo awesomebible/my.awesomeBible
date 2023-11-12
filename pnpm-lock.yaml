@@ -1792,8 +1792,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify/collections@1.0.354:
-    resolution: {integrity: sha512-YQcwM04zmMw7p+SJVN+1ShwwSxe3+IGVEiqpFZ6ZqzzFMEgQx64ai/57Rwmf1Q7L6d60Bl6FerLwcopl4teMGw==}
+  /@iconify/collections@1.0.355:
+    resolution: {integrity: sha512-X1gQqfO0tfXca2T1vkBOxouUQXkQ5QfsFSzpOQus1hPUlOxlIOY3V/qusVzbcggOmx78FijpIcnFtUt3VsPzSQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -6857,7 +6857,7 @@ packages:
   /nuxt-icon@0.6.5(nuxt@3.8.1)(rollup@2.79.1)(vite@4.5.0)(vue@3.3.8):
     resolution: {integrity: sha512-+NwwFkVRsqCd3kRR2B1IPPpfERrjxGhco/JwtvuIa3fti5MNauTlPJBBQiQsoljOSwwVeZS6Ie67jr56m2runA==}
     dependencies:
-      '@iconify/collections': 1.0.354
+      '@iconify/collections': 1.0.355
       '@iconify/vue': 4.1.1(vue@3.3.8)
       '@nuxt/devtools-kit': 1.0.2(nuxt@3.8.1)(rollup@2.79.1)(vite@4.5.0)
       '@nuxt/kit': 3.8.1(rollup@2.79.1)

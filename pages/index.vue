@@ -52,14 +52,14 @@ watchEffect(() => {
         <div class="grid grid-cols-4 gap-8 mt-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0" id="">
             <div class="relative flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 overflow-hidden bg-gray-100 sm:rounded-xl bg-gradient-to-br from-purple-200 to-blue-200" id="">
                 <div class="p-3 text-white bg-indigo-500 rounded-full" id="">
-                    <Icon name="ph-book-bookmark-bold" class="w-8 h-8" />
+                    <Icon name="ph:book-bookmark-bold" class="w-8 h-8" />
                 </div>
                 <h4 class="text-xl font-medium text-black">Lies!</h4>
                 <p class="text-base text-center font-sans text-gray-700">Lies die Bibel so wie du möchtest: Lightmode, Darkmode, Comic Sans - alles ist dir überlassen.</p>
             </div>
             <div class="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl bg-gradient-to-br from-red-200 to-orange-200">
                 <div class="p-3 text-white bg-indigo-500 rounded-full">
-                    <Icon name="ph-anchor-simple-bold" class="w-8 h-8" />
+                    <Icon name="ph:anchor-simple-bold" class="w-8 h-8" />
                 </div>
                 <h4 class="text-xl font-medium text-black" id="">Merke!</h4>
                 <p class="text-base text-center font-sans text-gray-700" id="">Merke dir Verse, damit du nie wieder Gottes Botschaft an dich vergisst.</p>
@@ -67,7 +67,7 @@ watchEffect(() => {
 
             <div class="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl bg-gradient-to-br from-green-200 to-blue-200">
                 <div class="p-3 text-white bg-indigo-500 rounded-full">
-                    <Icon name="ph-megaphone-bold" class="w-8 h-8" />
+                    <Icon name="ph:megaphone-bold" class="w-8 h-8" />
                 </div>
                 <h4 class="text-xl font-medium text-black" id="">Teile!</h4>
                 <p class="text-base text-center font-sans text-gray-700" id="">Wir haben es dir einfach gemacht, deine Gedanken mit anderen zu teilen.</p>
@@ -75,17 +75,18 @@ watchEffect(() => {
 
             <div class="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl bg-gradient-to-br from-pink-200 to-purple-200" id="">
                 <div class="p-3 text-white bg-indigo-500 rounded-full">
-                    <Icon name="ph-smiley-bold" class="w-8 h-8" />
+                    <Icon name="ph:smiley-bold" class="w-8 h-8" />
                 </div>
                 <h4 class="text-xl font-medium text-black" id="">Unabhängig</h4>
                 <p class="text-base text-center font-sans text-gray-700" id="">
-                    my.awesomeBible gehört keiner großen Firma und finanziert sich komplett von selbst.\nWir müssen uns nicht anpassen, wir können auf unsere Community hören. <br>
+                    my.awesomeBible gehört keiner großen Firma und finanziert sich komplett von selbst. <br>
+                    Wir müssen uns nicht anpassen, wir können auf unsere Community hören. <br>
                     Wir können unsere Vision ausleben.
                 </p>
             </div>
             <div class="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl bg-gradient-to-br from-green-200 to-green-500">
                 <div class="p-3 text-white bg-indigo-500 rounded-full">
-                    <Icon name="ph-shield-check-bold" class="w-8 h-8" />
+                    <Icon name="ph:shield-check-bold" class="w-8 h-8" />
                 </div>
                 <h4 class="text-xl font-medium text-black" id="">Sicher</h4>
                 <p class="text-base text-center text-gray-700 font-sans">Wir werden deine Daten nie an irgendeine Firma verkaufen, und du kannst sie jederzeit exportieren.</p>
@@ -93,7 +94,7 @@ watchEffect(() => {
 
             <div class="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-4 bg-gray-100 sm:rounded-xl bg-gradient-to-br from-yellow-200 to-yellow-500">
                 <div class="p-3 text-white bg-indigo-500 rounded-full">
-                    <Icon name="ph-github-logo-bold" class="w-8 h-8" />
+                    <Icon name="ph:github-logo-bold" class="w-8 h-8" />
                 </div>
                 <h4 class="text-xl font-medium text-black" id="">Quelloffen</h4>
                 <p class="text-base text-center text-gray-700 font-sans" id="">my.awesomeBible ist komplett quelloffen. Das bedeutet, dass jeder Sicherheitslücken im Code finden und neue Features hinzufügen kann.</p>
@@ -117,7 +118,8 @@ watchEffect(() => {
                 Wo liegen meine Daten?
             </h3>
             <p class="mt-2 text-base font-sans text-gray-600 dark:text-gray-200 sm:text-lg md:text-normal">
-                Deine Daten liegen in Deutschland. Einerseits garantiert das schnelle Reaktionszeiten (Ping), andererseits garantiert es, dass deine Daten mit EU Datenschutzgesetzen geschützt sind. \n Um noch ein Stück genauer zu werden: Deine Daten liegen auf einem Server von Stuxhost in Falkenstein.
+                Deine Daten liegen in Deutschland. Einerseits garantiert das schnelle Reaktionszeiten (Ping), andererseits garantiert es, dass deine Daten mit EU Datenschutzgesetzen geschützt sind. <br>
+                Um noch ein Stück genauer zu werden: Deine Daten liegen auf einem Server von Stuxhost in Falkenstein.
             </p>
         </div>
         <div
@@ -136,7 +138,8 @@ watchEffect(() => {
             class="w-full px-6 py-6 mx-auto mt-10 bg-white dark:bg-blue-900 border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
             <h3 class="text-lg font-bold text-purple-500 dark:text-purple-200 sm:text-xl md:text-2xl">Ist my.awesomeBible unsicher weil der Quellcode offen liegt?</h3>
             <p class="mt-2 text-base font-sans text-gray-600 dark:text-gray-200 sm:text-lg md:text-normal">
-                Nein. Das ist ein Mythos - sogar das Gegenteil ist der Fall. Wäre der Quellcode nicht offen, dann wäre allein ich für die Sicherheit verantwortlich.\nDa er aber quelloffen ist, kann jeder Fehler finden und ausnutzen - aber genau so gut können sie gemeldet und behoben werden.
+                Nein. Das ist ein Mythos - sogar das Gegenteil ist der Fall. Wäre der Quellcode nicht offen, dann wäre allein ich für die Sicherheit verantwortlich. <br>
+                Da er aber quelloffen ist, kann jeder Fehler finden und ausnutzen - aber genau so gut können sie gemeldet und behoben werden.
             </p>
         </div>
         <div id="contact"
@@ -176,21 +179,21 @@ watchEffect(() => {
                 </p>
                 <ul class="flex-1 p-0 mt-4 leading-7 text-gray-900 border-0 border-gray-200">
                     <li class="inline-flex items-center w-full mb-2 ml-5 font-semibold dark:text-gray-300 text-left border-solid" id="">
-                        <Icon name="ph-check-bold" class="w-5 h-5 mr-2 leading-7 sm:h-5 sm:w-5 md:h-6 md:w-6" />
+                        <Icon name="ph:check-bold" class="w-5 h-5 mr-2 leading-7 sm:h-5 sm:w-5 md:h-6 md:w-6" />
                         Alle Features
                     </li>
                     <li class="inline-flex items-center w-full mb-2 ml-5 font-semibold dark:text-gray-300 text-left border-solid" id="">
-                        <Icon name="ph-check-bold" class="w-5 h-5 mr-2 leading-7 sm:h-5 sm:w-5 md:h-6 md:w-6" />
-                        <Icon name="ph-infinity-bold" class="w-5 h-5 mr-2 leading-7 sm:h-5 sm:w-5 md:h-6 md:w-6 dark:fill-gray-300" />
+                        <Icon name="ph:check-bold" class="w-5 h-5 mr-2 leading-7 sm:h-5 sm:w-5 md:h-6 md:w-6" />
+                        <Icon name="ph:infinity-bold" class="w-5 h-5 mr-2 leading-7 sm:h-5 sm:w-5 md:h-6 md:w-6 dark:fill-gray-300" />
                         viele Notizen
                     </li>
                     <li class="inline-flex items-center w-full mb-2 ml-5 font-semibold dark:text-gray-300 text-left border-solid">
-                        <Icon name="ph-check-bold" class="w-5 h-5 mr-2 leading-7 sm:h-5 sm:w-5 md:h-6 md:w-6" />
-                        <Icon name="ph-infinity-bold" class="w-5 h-5 mr-2 leading-7 sm:h-5 sm:w-5 md:h-6 md:w-6 dark:fill-gray-300" />
+                        <Icon name="ph:check-bold" class="w-5 h-5 mr-2 leading-7 sm:h-5 sm:w-5 md:h-6 md:w-6" />
+                        <Icon name="ph:infinity-bold" class="w-5 h-5 mr-2 leading-7 sm:h-5 sm:w-5 md:h-6 md:w-6 dark:fill-gray-300" />
                         viele Markierungen
                     </li>
                     <li class="inline-flex items-center w-full mb-2 ml-5 font-semibold dark:text-gray-300 text-left border-solid">
-                        <Icon name="ph-check-bold" class="w-5 h-5 mr-2 leading-7 sm:h-5 sm:w-5 md:h-6 md:w-6" />
+                        <Icon name="ph:check-bold" class="w-5 h-5 mr-2 leading-7 sm:h-5 sm:w-5 md:h-6 md:w-6" />
                         alle Bibelübersetzungen
                     </li>
                 </ul>

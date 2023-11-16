@@ -4,6 +4,10 @@ const { auth } = useSupabaseClient()
 
 const redirectTo = `${useRuntimeConfig().public.baseUrl}/confirm`
 
+useHead({
+  titleTemplate: 'my.awesomeBible'
+})
+
 watchEffect(() => {
     if (user.value) {
         navigateTo('/home')

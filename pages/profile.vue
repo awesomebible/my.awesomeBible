@@ -2,6 +2,10 @@
 const user = useSupabaseUser()
 const { auth } = useSupabaseClient()
 
+useHead({
+  titleTemplate: 'Profil'
+})
+
 watchEffect(() => {
   if (!user.value) {
     navigateTo('/login')

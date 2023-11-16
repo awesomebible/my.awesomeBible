@@ -22,7 +22,7 @@ export default defineNuxtConfig({
       manifest: {
         name: 'my.awesomeBible',
         short_name: 'Bibel',
-        theme_color: '#7C3AED',
+        theme_color: '#ffffff',
         icons: [
           {
             src: 'pwa-192x192.png',
@@ -43,11 +43,11 @@ export default defineNuxtConfig({
         ],
       },
       workbox: {
-        navigateFallback: '/',
         globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
       },
       client: {
         installPrompt: true,
+        periodicSyncForUpdates: 3600,
       },
       devOptions: {
         enabled: true,

@@ -21,8 +21,8 @@ devDependencies:
     specifier: ^3.3.5
     version: 3.3.5
   '@nuxtjs/supabase':
-    specifier: ^1.1.3
-    version: 1.1.3(rollup@2.79.1)
+    specifier: ^1.1.4
+    version: 1.1.4(rollup@2.79.1)
   '@vite-pwa/nuxt':
     specifier: ^0.2.3
     version: 0.2.3(@nuxt/kit@3.8.1)(vite-plugin-pwa@0.16.7)
@@ -2360,11 +2360,11 @@ packages:
       - supports-color
     dev: true
 
-  /@nuxtjs/supabase@1.1.3(rollup@2.79.1):
-    resolution: {integrity: sha512-DNYp5s946kU1f9QvKry8bBJh22hWgrf8LY/nFxkFpMqnHLWA4VwNOuoFLGL8+gtkjEW/NAJyJ/pp1O8GnyDRaQ==}
+  /@nuxtjs/supabase@1.1.4(rollup@2.79.1):
+    resolution: {integrity: sha512-Sbcg43Ywv9qTL+HGHrPWGWPfGLg4Eclxj+tJsK2fJ8pP4PoTJmP3SZnHv+oxxRM6igcTukEgEGhFASk8KJbHJw==}
     dependencies:
       '@nuxt/kit': 3.8.1(rollup@2.79.1)
-      '@supabase/supabase-js': 2.38.0
+      '@supabase/supabase-js': 2.38.4
       defu: 6.1.3
       pathe: 1.1.1
     transitivePeerDependencies:
@@ -2860,8 +2860,8 @@ packages:
       '@supabase/node-fetch': 2.6.15
     dev: true
 
-  /@supabase/supabase-js@2.38.0:
-    resolution: {integrity: sha512-FSkIcz+/+TTBqNqhR8AdtblxEqCF72//CCkmZFIRCa3Xh/aiI0F4cBdL7AB3aIQn2DhE4aGxZ4mGiGR593096Q==}
+  /@supabase/supabase-js@2.38.4:
+    resolution: {integrity: sha512-bYwxm/GosvRqOMIv6YP7qUTZWi/trgHtDWUEZDEmyRHW24d0JYIb1GOt6RaO2hsWlecn88DAJIpjoNbprocgRA==}
     dependencies:
       '@supabase/functions-js': 2.1.5
       '@supabase/gotrue-js': 2.57.0

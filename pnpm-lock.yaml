@@ -27,8 +27,8 @@ devDependencies:
     specifier: ^0.2.3
     version: 0.2.3(@nuxt/kit@3.8.1)(vite-plugin-pwa@0.16.7)
   daisyui:
-    specifier: ^4.4.2
-    version: 4.4.2(postcss@8.4.31)
+    specifier: ^4.4.10
+    version: 4.4.10(postcss@8.4.31)
   nuxt:
     specifier: ^3.8.1
     version: 3.8.1(rollup@2.79.1)(vite@4.5.0)
@@ -4381,8 +4381,8 @@ packages:
       type: 1.2.0
     dev: true
 
-  /daisyui@4.4.2(postcss@8.4.31):
-    resolution: {integrity: sha512-Ecg5loskj9dkaAnTSK5Xn5jb24TqDlQIg/NJ025jCkw2S/zw12btjvLgY2Sv5Ws1DFVoVBRs3XYXyojZG7zVnw==}
+  /daisyui@4.4.10(postcss@8.4.31):
+    resolution: {integrity: sha512-NGDsOLtCQ9UzfeOUlKn1lwneQte4UoINmAaDBcrMAbZviu/jWm7PSR9DqH3eE/AY/TpkImdAPVK+kGsZlpEFkQ==}
     engines: {node: '>=16.9.0'}
     dependencies:
       css-selector-tokenizer: 0.8.0

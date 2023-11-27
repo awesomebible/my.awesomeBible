@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^1.1.13
     version: 1.1.13
   '@iconify-json/heroicons-outline':
-    specifier: ^1.1.7
-    version: 1.1.7
+    specifier: ^1.1.8
+    version: 1.1.8
   '@iconify-json/mdi':
     specifier: ^1.1.55
     version: 1.1.55
@@ -25,7 +25,7 @@ devDependencies:
     version: 1.1.4(rollup@2.79.1)
   '@vite-pwa/nuxt':
     specifier: ^0.2.3
-    version: 0.2.3(@nuxt/kit@3.8.1)(vite-plugin-pwa@0.16.7)
+    version: 0.2.3(@nuxt/kit@3.8.2)(vite-plugin-pwa@0.16.7)
   daisyui:
     specifier: ^4.4.10
     version: 4.4.10(postcss@8.4.31)
@@ -1774,8 +1774,8 @@ packages:
       vue: 3.3.8
     dev: true
 
-  /@iconify-json/heroicons-outline@1.1.7:
-    resolution: {integrity: sha512-sU65X5hLOn6/gU+Al0G7Jc0Pje/23atx9rE+ejECYb+j2ANgECSeRrdHoPE4WUqdx/F5hqReLcT4ffZBqLUfIg==}
+  /@iconify-json/heroicons-outline@1.1.8:
+    resolution: {integrity: sha512-JTbcsSND6ZsAuKSb5PpZ0LEb5fxwwlHuunJuQV++VXNlg+lsywt9SWPsckrcIGB5oSSsulJhYCX4vqsHnhkn4Q==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -3231,13 +3231,13 @@ packages:
       - supports-color
     dev: true
 
-  /@vite-pwa/nuxt@0.2.3(@nuxt/kit@3.8.1)(vite-plugin-pwa@0.16.7):
+  /@vite-pwa/nuxt@0.2.3(@nuxt/kit@3.8.2)(vite-plugin-pwa@0.16.7):
     resolution: {integrity: sha512-dAf7crzDth3/hXQ/JAcO0vh9alFl6gUZ3Sw2so1wL4W4VZOMYIA8D3sMo5AH8zV+loUlkqsb6kutmz8IKdpjmQ==}
     peerDependencies:
       '@nuxt/kit': ^3.6.2
       vite-plugin-pwa: '>=0.16.5 <1'
     dependencies:
-      '@nuxt/kit': 3.8.1(rollup@2.79.1)
+      '@nuxt/kit': 3.8.2(rollup@2.79.1)
       pathe: 1.1.1
       ufo: 1.3.2
       vite-plugin-pwa: 0.16.7(vite@4.5.0)(workbox-build@7.0.0)(workbox-window@7.0.0)

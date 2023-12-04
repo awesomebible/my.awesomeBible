@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^1.1.8
     version: 1.1.8
   '@iconify-json/mdi':
-    specifier: ^1.1.55
-    version: 1.1.55
+    specifier: ^1.1.58
+    version: 1.1.58
   '@nuxt/ui':
     specifier: ^2.11.0
     version: 2.11.0(nuxt@3.8.2)(rollup@2.79.1)(vite@4.5.0)(vue@3.3.8)
@@ -1786,8 +1786,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify-json/mdi@1.1.55:
-    resolution: {integrity: sha512-ycnFub+EQx+3D/aDCg6iC7sjexOUa5GzxUNIZFFl0Pq7aDxbmhIludoyYnguEO3REyWf9FcOOmvVcQkdtwKHTw==}
+  /@iconify-json/mdi@1.1.58:
+    resolution: {integrity: sha512-e2dWv+EtsAdbweWtbS/Wk7sIfsP1vOinNXTfdTbMWTYlmGz7/hqGw8YUONe1XwHuNiwTjm7A7V+S4IVzFTHQRw==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true

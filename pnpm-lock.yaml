@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^1.1.13
     version: 1.1.13
   '@iconify-json/heroicons-outline':
-    specifier: ^1.1.8
-    version: 1.1.8
+    specifier: ^1.1.9
+    version: 1.1.9
   '@iconify-json/mdi':
     specifier: ^1.1.58
     version: 1.1.58
@@ -1774,8 +1774,8 @@ packages:
       vue: 3.3.8
     dev: true
 
-  /@iconify-json/heroicons-outline@1.1.8:
-    resolution: {integrity: sha512-JTbcsSND6ZsAuKSb5PpZ0LEb5fxwwlHuunJuQV++VXNlg+lsywt9SWPsckrcIGB5oSSsulJhYCX4vqsHnhkn4Q==}
+  /@iconify-json/heroicons-outline@1.1.9:
+    resolution: {integrity: sha512-xs0fn54DxRaPszWNew4s/4eQOugSAuDRYdyqej9bDB0y80KoAHWmdA0OAN+oCfubx0l+vRJInUQrVD7f4K+AnA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true

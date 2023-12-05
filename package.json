@@ -8,7 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@iconify-json/heroicons": "^1.1.13",
+    "@iconify-json/heroicons": "^1.1.15",
     "@iconify-json/heroicons-outline": "^1.1.9",
     "@iconify-json/mdi": "^1.1.58",
     "@nuxt/ui": "^2.11.0",

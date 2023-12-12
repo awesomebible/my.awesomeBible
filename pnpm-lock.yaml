@@ -24,8 +24,8 @@ devDependencies:
     specifier: ^1.1.4
     version: 1.1.4(rollup@2.79.1)
   '@vite-pwa/nuxt':
-    specifier: ^0.3.3
-    version: 0.3.3(rollup@2.79.1)(vite@4.5.0)(workbox-build@7.0.0)(workbox-window@7.0.0)
+    specifier: ^0.3.5
+    version: 0.3.5(rollup@2.79.1)(vite@4.5.0)(workbox-build@7.0.0)(workbox-window@7.0.0)
   daisyui:
     specifier: ^4.4.19
     version: 4.4.19(postcss@8.4.31)
@@ -3196,8 +3196,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vite-pwa/nuxt@0.3.3(rollup@2.79.1)(vite@4.5.0)(workbox-build@7.0.0)(workbox-window@7.0.0):
-    resolution: {integrity: sha512-lmX7KYeSUZDjfpZjgiR1K+9PF4q/nSzY5P6WmdgiL1JamBWeooRdAFt+35Y9DV5zij4amtEVvxmDOWZilN3f0Q==}
+  /@vite-pwa/nuxt@0.3.5(rollup@2.79.1)(vite@4.5.0)(workbox-build@7.0.0)(workbox-window@7.0.0):
+    resolution: {integrity: sha512-ighafr2qyLCRu6SS2+z2NYg/UWAVEJVetJTid8EQr3KgIrDCCfgfJKc3EEaiT7OF0M3/oppDcguemHkaKwfNEQ==}
     dependencies:
       '@nuxt/kit': 3.8.2(rollup@2.79.1)
       pathe: 1.1.1

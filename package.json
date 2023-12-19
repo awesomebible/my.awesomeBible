@@ -10,7 +10,7 @@
   "devDependencies": {
     "@iconify-json/heroicons": "^1.1.17",
     "@iconify-json/heroicons-outline": "^1.1.10",
-    "@iconify-json/mdi": "^1.1.62",
+    "@iconify-json/mdi": "^1.1.63",
     "@nuxt/ui": "^2.11.1",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/supabase": "^1.1.4",

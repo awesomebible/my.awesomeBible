@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@iconify-json/heroicons':
-    specifier: ^1.1.16
-    version: 1.1.16
+    specifier: ^1.1.17
+    version: 1.1.17
   '@iconify-json/heroicons-outline':
     specifier: ^1.1.10
     version: 1.1.10
@@ -1782,8 +1782,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify-json/heroicons@1.1.16:
-    resolution: {integrity: sha512-T6rn8sLyIjoUHxdNGXY3GDWLDQ+egOtAJ/ds+P3T0JdVs2A/BDIkZhEDI+gOPz2A27uO0UdiFr9+LcnmRu+DIw==}
+  /@iconify-json/heroicons@1.1.17:
+    resolution: {integrity: sha512-zI04VPwR8p9FNQsKbUpskz/3LWXrQGXOuRGZXbTMfklG20bGjA1te87E0kbm7mfQteuBMp9RHYNX9ck71NmtDg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -2222,7 +2222,7 @@ packages:
       '@egoist/tailwindcss-icons': 1.6.0(tailwindcss@3.3.6)
       '@headlessui/tailwindcss': 0.2.0(tailwindcss@3.3.6)
       '@headlessui/vue': 1.7.16(vue@3.3.11)
-      '@iconify-json/heroicons': 1.1.16
+      '@iconify-json/heroicons': 1.1.17
       '@nuxt/kit': 3.8.2(rollup@2.79.1)
       '@nuxtjs/color-mode': 3.3.2(rollup@2.79.1)
       '@nuxtjs/tailwindcss': 6.10.1(rollup@2.79.1)

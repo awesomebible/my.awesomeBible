@@ -27,8 +27,8 @@ devDependencies:
     specifier: ^0.3.6
     version: 0.3.6(rollup@2.79.1)(vite@5.0.10)(workbox-build@7.0.0)(workbox-window@7.0.0)
   daisyui:
-    specifier: ^4.4.23
-    version: 4.4.23(postcss@8.4.32)
+    specifier: ^4.4.24
+    version: 4.4.24(postcss@8.4.32)
   nuxt:
     specifier: ^3.8.2
     version: 3.8.2(rollup@2.79.1)(vite@5.0.10)
@@ -4430,8 +4430,8 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dev: true
 
-  /daisyui@4.4.23(postcss@8.4.32):
-    resolution: {integrity: sha512-IFQRGoGoAke8chxPcDqQJFldVVd51JL7b4mRA3LqsLexW/6xicZzz9X3GXdGdnYsu8QPxZN4uzQZ5fwRNYXOSg==}
+  /daisyui@4.4.24(postcss@8.4.32):
+    resolution: {integrity: sha512-u/B3484J08V7N0rIYymnC+SyxOjlYQL+2vyhHWV+/KC+VaUcbEF2Z3H06eCPgdTiZ0J+ml44aH7wBhIymPFQ+g==}
     engines: {node: '>=16.9.0'}
     dependencies:
       css-selector-tokenizer: 0.8.0

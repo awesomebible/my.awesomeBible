@@ -27,8 +27,7 @@ watchEffect(() => {
                         <span class="text-xl font-black leading-none text-gray-900 select-none logo">my.awesomeBible<span
                                 class="text-indigo-600">.</span></span>
                     </NuxtLink>
-                    <div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:w-3/4 md:absolute lg:text-base md:h-auto md:bg-transparent md:p-0 md:relative md:flex"
-                        :class="{ 'flex fixed': showMenu, 'hidden': !showMenu }">
+                    <div class="top-0 left-0 items-start hidden w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:w-3/4 md:absolute lg:text-base md:h-auto md:bg-transparent md:p-0 md:relative md:flex">
                         <div
                             class="flex-col w-full h-auto overflow-hidden bg-white rounded-lg select-none md:bg-transparent md:rounded-none md:relative md:flex md:flex-row md:overflow-auto">
                             <a href="/"

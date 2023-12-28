@@ -17,7 +17,7 @@
     "@vite-pwa/nuxt": "^0.3.6",
     "daisyui": "^4.4.24",
     "nuxt": "^3.9.0",
-    "nuxt-icon": "^0.6.7",
+    "nuxt-icon": "^0.6.8",
     "webpack": "^5.89.0"
   }
 }

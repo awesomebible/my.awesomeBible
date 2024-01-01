@@ -14,7 +14,7 @@
     "@nuxt/ui": "^2.11.1",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/supabase": "^1.1.5",
-    "@vite-pwa/nuxt": "^0.3.6",
+    "@vite-pwa/nuxt": "^0.4.0",
     "daisyui": "^4.4.24",
     "nuxt": "^3.9.0",
     "nuxt-icon": "^0.6.8",

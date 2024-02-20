@@ -8,16 +8,16 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@iconify-json/heroicons": "^1.1.19",
+    "@iconify-json/heroicons": "^1.1.20",
     "@iconify-json/heroicons-outline": "^1.1.10",
     "@iconify-json/mdi": "^1.1.64",
     "@nuxt/ui": "^2.13.0",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/supabase": "^1.1.6",
     "@vite-pwa/nuxt": "^0.5.0",
-    "daisyui": "^4.7.0",
-    "nuxt": "^3.10.1",
+    "daisyui": "^4.7.2",
+    "nuxt": "^3.10.2",
     "nuxt-icon": "^0.6.8",
-    "webpack": "^5.90.1"
+    "webpack": "^5.90.3"
   }
 }

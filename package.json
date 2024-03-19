@@ -16,7 +16,7 @@
     "@nuxtjs/supabase": "^1.1.7",
     "@vite-pwa/nuxt": "^0.6.0",
     "daisyui": "^4.7.3",
-    "nuxt": "^3.11.0",
+    "nuxt": "^3.11.1",
     "nuxt-icon": "^0.6.9",
     "webpack": "^5.90.3"
   }

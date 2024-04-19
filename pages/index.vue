@@ -168,7 +168,7 @@ watchEffect(() => {
                     Wir finanzieren uns aktuell ausschließlich aus eigenem Geld, diese Entscheidung haben wir getroffen,
                     weil wir eine wirklich kostenlose und offene Bibelapp bauen wollen.
                     <a class="font-sans hover:text-violet-600 underline decoration-violet-500 decoration-2 hover:decoration-wavy"
-                        href="https:///">
+                        href="https://docs.awesomebible.de/myawesomebible/vision/">
                         Mehr über Geld, und wie es weiter geht erfährst du hier.
                     </a>
                 </p>

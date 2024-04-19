@@ -39,8 +39,6 @@ watchEffect(() => {
                                     class="inline-block w-full px-6 py-2 mx-0 font-medium text-left text-indigo-600 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center">Home</a>
                                 <a href="#features"
                                     class="inline-block w-full px-6 py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center">Features</a>
-                                <a href="https://changelog.awesomebible.de"
-                                    class="inline-block w-full px-6 py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center">Blog</a>
                                 <NuxtLink as="a" href="/kontakt"
                                     class="inline-block w-full px-6 py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-indigo-600 lg:mx-3 md:text-center">
                                     Kontakt</NuxtLink>
@@ -170,7 +168,7 @@ watchEffect(() => {
                     Wir finanzieren uns aktuell ausschließlich aus eigenem Geld, diese Entscheidung haben wir getroffen,
                     weil wir eine wirklich kostenlose und offene Bibelapp bauen wollen.
                     <a class="font-sans hover:text-violet-600 underline decoration-violet-500 decoration-2 hover:decoration-wavy"
-                        href="https://changelog.awesomebible.de/post/vision/">
+                        href="https:///">
                         Mehr über Geld, und wie es weiter geht erfährst du hier.
                     </a>
                 </p>

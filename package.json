@@ -13,7 +13,7 @@
     "@iconify-json/mdi": "^1.1.66",
     "@nuxt/ui": "^2.15.2",
     "@nuxtjs/pwa": "^3.3.5",
-    "@nuxtjs/supabase": "^1.2.0",
+    "@nuxtjs/supabase": "^1.2.1",
     "@vite-pwa/nuxt": "^0.6.0",
     "daisyui": "^4.10.2",
     "nuxt": "^3.11.2",

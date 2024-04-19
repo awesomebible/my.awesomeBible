@@ -255,7 +255,7 @@ watchEffect(() => {
                         alle Bibelübersetzungen
                     </li>
                 </ul>
-                <NuxtLink as="a" href="/login"
+                <NuxtLink as="a" href="#get-started"
                     class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400">
                     Los geht's!
                 </NuxtLink>

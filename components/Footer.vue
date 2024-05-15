@@ -8,12 +8,12 @@
                 </a>
             </div>
             <div class="px-5 py-2">
-                <a href="https://codeberg.org/awesomebible/my.awesomeBible" class="text-base leading-6 text-green-500 hover:text-green-600 underline decoration-green-500 decoration-2 hover:decoration-wavy">
+                <a href="https://github.com/awesomebible/my.awesomeBible-nuxt" class="text-base leading-6 text-green-500 hover:text-green-600 underline decoration-green-500 decoration-2 hover:decoration-wavy">
                     Github
                 </a>
             </div>
         </nav>
-        <p class="mt-8 text-base leading-6 text-center text-blue-800">© 2023 awesomeBible</p>
+        <p class="mt-8 text-base leading-6 text-center text-blue-800">© 2024 awesomeBible</p>
     </div>
 </footer>
 </template>

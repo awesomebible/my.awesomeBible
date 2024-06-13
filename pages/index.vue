@@ -281,7 +281,7 @@ watchEffect(() => {
                 <div>
                     <div class="relative z-10 h-auto p-8 py-10 overflow-hidden bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7"
                         id="">
-                        <h3 class="mb-2 text-2xl tracking-tight font-bold text-center" id="">
+                        <h3 class="mb-2 text-gray-900 text-2xl tracking-tight font-bold text-center" id="">
                             Öffne das Buch!
                         </h3>
                         <div class="block">

@@ -27,8 +27,8 @@ devDependencies:
     specifier: ^1.2.2
     version: 1.2.2(rollup@2.79.1)
   '@vite-pwa/nuxt':
-    specifier: ^0.8.0
-    version: 0.8.0(rollup@2.79.1)(vite@5.3.1)(workbox-build@7.1.1)(workbox-window@7.1.0)
+    specifier: ^0.8.1
+    version: 0.8.1(rollup@2.79.1)(vite@5.3.1)(workbox-build@7.1.1)(workbox-window@7.1.0)
   daisyui:
     specifier: ^4.12.2
     version: 4.12.2(postcss@8.4.38)
@@ -3725,8 +3725,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vite-pwa/nuxt@0.8.0(rollup@2.79.1)(vite@5.3.1)(workbox-build@7.1.1)(workbox-window@7.1.0):
-    resolution: {integrity: sha512-iQDBUZgi0iNAZOXcVt4lxSBn1hYG9KoOhM5VCi1RqltQYKHdY04fUnNFaTiACe5reRui03YLFU6zWmdJVM/a/A==}
+  /@vite-pwa/nuxt@0.8.1(rollup@2.79.1)(vite@5.3.1)(workbox-build@7.1.1)(workbox-window@7.1.0):
+    resolution: {integrity: sha512-XQYBeP1quQXLxPG25qL5igeYw7sSCUVNwekLr+P5WXpdm9o9GhZt2yPoWXkU372CunvqzXxYexzknqHS8zP/BQ==}
     peerDependencies:
       '@vite-pwa/assets-generator': ^0.2.4
     peerDependenciesMeta:

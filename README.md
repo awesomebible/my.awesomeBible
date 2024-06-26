@@ -30,10 +30,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run dev`             | Starts local dev server at `localhost:3000`      |
 | `npm run build`           | Build your production site to `./dist/`          |
 | `npm run preview`         | Preview your build locally, before deploying     |
-
-## Übersetzung
-Für die Übersetzung von my.awesomeBible nutzen wir [Weblate](https://translate.codeberg.org/engage/my-awesomebible/).
-
-<a href="https://translate.codeberg.org/engage/my-awesomebible/">
-  <img src="https://translate.codeberg.org/widget/my-awesomebible/frontend/287x66-white.png" alt="Übersetzungsstatus" />
-</a>

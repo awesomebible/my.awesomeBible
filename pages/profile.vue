@@ -1,16 +1,10 @@
 <script setup lang="ts">
-const user = useSupabaseUser()
-const { auth } = useSupabaseClient()
-
 useHead({
   titleTemplate: 'Profil'
 })
-
-watchEffect(() => {
-  if (!user.value) {
-    navigateTo('/login')
-  }
-})
+definePageMeta({
+    middleware: ['auth-logged-in'],
+  })
 </script>
 <template>
   <main>

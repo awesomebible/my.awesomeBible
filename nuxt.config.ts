@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
-  modules: [// https://github.com/nuxt-modules/supabase
-  '@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/devtools', "@nuxtjs/kinde"],
+  modules: [
+  '@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/devtools', "@nuxtjs/kinde"
+],
 
   kinde: {
     // This is true by default and adds 'auth-logged-in' and 'auth-logged-out'

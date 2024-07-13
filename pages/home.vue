@@ -1,11 +1,10 @@
 <script setup lang="ts">
-  definePageMeta({
-    middleware: ['auth-logged-in'],
-  })
 useHead({
   titleTemplate: 'Home'
 })
-
+definePageMeta({
+    middleware: ['auth-logged-in'],
+  })
 </script>
 <template>
   <main class="flex flex-col items-center pt-5">

@@ -1,16 +1,11 @@
 <script setup lang="ts">
-const user = useSupabaseUser()
-const { auth } = useSupabaseClient()
-
+  definePageMeta({
+    middleware: ['auth-logged-in'],
+  })
 useHead({
   titleTemplate: 'Home'
 })
 
-watchEffect(() => {
-  if (!user.value) {
-    navigateTo('/login')
-  }
-})
 </script>
 <template>
   <main class="flex flex-col items-center pt-5">

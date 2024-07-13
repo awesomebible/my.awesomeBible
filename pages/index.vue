@@ -244,10 +244,12 @@ useHead({
                         alle Bibelübersetzungen
                     </li>
                 </ul>
-                <NuxtLink as="a" href="#get-started"
-                    class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400">
+                <RegisterLink 
+                    to="/api/register"
+                    class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400"
+                    external>
                     Los geht's!
-                </NuxtLink>
+                </RegisterLink>
             </div>
         </div>
     </div>
@@ -273,13 +275,30 @@ useHead({
                         <h3 class="mb-2 text-gray-900 text-2xl tracking-tight font-bold text-center" id="">
                             Öffne das Buch!
                         </h3>
-                        <div class="block">
-                            <LoginLink to="/api/login" external>
-                            Sign in
+                        <div v-if="$auth.loggedIn" class="block">
+                            <h4 class="mb-2 text-gray-900 text-xl tracking-tight font-bold text-center" id="">
+                            Du bist angemeldet.
+                            </h4>
+                            <NuxtLink
+                            to="/home"
+                            class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400"
+                            >
+                            Zur App
+                            </NuxtLink>
+                        </div>
+                        <div v-else>
+                            <LoginLink 
+                            to="/api/login"
+                            class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400"
+                            external>
+                            Anmelden
                             </LoginLink>
 
-                            <RegisterLink to="/api/register" external>
-                            Sign up
+                            <RegisterLink 
+                            to="/api/register"
+                            class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400"
+                            external>
+                            Registrieren
                             </RegisterLink>
                         </div>
                     </div>
@@ -289,3 +308,5 @@ useHead({
     </div>
 </section>
 <Footer /></template>
+import type { RegisterLink } from '#build/components';
+

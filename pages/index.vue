@@ -1,17 +1,6 @@
 <script setup lang="ts">
-const user = useSupabaseUser()
-const { auth } = useSupabaseClient()
-
-const redirectTo = `${useRuntimeConfig().public.baseUrl}/confirm`
-
 useHead({
   titleTemplate: 'my.awesomeBible'
-})
-
-watchEffect(() => {
-    if (user.value) {
-        navigateTo('/home')
-    }
 })
 </script>
 
@@ -156,7 +145,7 @@ watchEffect(() => {
                 <p class="mt-2 text-base font-sans text-gray-600 dark:text-gray-200 sm:text-lg md:text-normal">
                     Deine Daten liegen in Deutschland. Einerseits garantiert das schnelle Reaktionszeiten (Ping),
                     andererseits garantiert es, dass deine Daten mit EU Datenschutzgesetzen geschützt sind. <br>
-                    Um noch ein Stück genauer zu werden: Deine Daten liegen auf einem Server von Stuxhost in Falkenstein.
+                    Um noch ein Stück genauer zu werden: Deine Daten liegen auf einem Server von Contabo, in Frankfurt.
                 </p>
             </div>
             <div
@@ -171,17 +160,6 @@ watchEffect(() => {
                         href="https://docs.awesomebible.de/myawesomebible/vision/">
                         Mehr über Geld, und wie es weiter geht erfährst du hier.
                     </a>
-                </p>
-            </div>
-            <div
-                class="w-full px-6 py-6 mx-auto mt-10 bg-white dark:bg-blue-900 border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
-                <h3 class="text-lg font-bold text-purple-500 dark:text-purple-200 sm:text-xl md:text-2xl">Ist
-                    my.awesomeBible unsicher weil der Quellcode offen liegt?</h3>
-                <p class="mt-2 text-base font-sans text-gray-600 dark:text-gray-200 sm:text-lg md:text-normal">
-                    Nein. Das ist ein Mythos - sogar das Gegenteil ist der Fall. Wäre der Quellcode nicht offen, dann wäre
-                    allein ich für die Sicherheit verantwortlich. <br>
-                    Da er aber quelloffen ist, kann jeder Fehler finden und ausnutzen - aber genau so gut können sie
-                    gemeldet und behoben werden.
                 </p>
             </div>
             <div id="contact"
@@ -255,10 +233,12 @@ watchEffect(() => {
                         alle Bibelübersetzungen
                     </li>
                 </ul>
-                <NuxtLink as="a" href="#get-started"
-                    class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400">
+                <RegisterLink 
+                    to="/api/register"
+                    class="inline-flex justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400"
+                    external>
                     Los geht's!
-                </NuxtLink>
+                </RegisterLink>
             </div>
         </div>
     </div>
@@ -284,19 +264,31 @@ watchEffect(() => {
                         <h3 class="mb-2 text-gray-900 text-2xl tracking-tight font-bold text-center" id="">
                             Öffne das Buch!
                         </h3>
-                        <div class="block">
-                            <button @click="auth.signInWithOAuth({ provider: 'discord', options: { redirectTo } })"
-                                class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400"
-                                label="Discord">
-                                <Icon name="fa-brands:discord" class="w-5 h-5 mr-3" />
-                                Discord
-                            </button>
-                            <button @click="auth.signInWithOAuth({ provider: 'google', options: { redirectTo } })"
-                                class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400"
-                                label="Google">
-                                <Icon name="fa-brands:google" class="w-5 h-5 mr-3" />
-                                Google
-                            </button>
+                        <div v-if="$auth.loggedIn" class="block">
+                            <h4 class="mb-2 text-gray-900 text-xl tracking-tight font-bold text-center" id="">
+                            Du bist angemeldet.
+                            </h4>
+                            <NuxtLink
+                            to="/home"
+                            class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400"
+                            >
+                            Zur App
+                            </NuxtLink>
+                        </div>
+                        <div v-else>
+                            <LoginLink 
+                            to="/api/login"
+                            class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400"
+                            external>
+                            Anmelden
+                            </LoginLink>
+
+                            <RegisterLink 
+                            to="/api/register"
+                            class="inline-flex items-center justify-center w-full px-4 py-3 mt-8 font-sans text-sm leading-none text-center text-white no-underline bg-indigo-600 rounded cursor-pointer hover:bg-indigo-700 hover:border-indigo-700 focus-within:bg-indigo-700 focus-within:border-indigo-700 focus-within:text-white sm:text-base md:text-lg focus:ring-4 focus:ring-indigo-400"
+                            external>
+                            Registrieren
+                            </RegisterLink>
                         </div>
                     </div>
                 </div>
@@ -305,3 +297,5 @@ watchEffect(() => {
     </div>
 </section>
 <Footer /></template>
+import type { RegisterLink } from '#build/components';
+

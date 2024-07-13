@@ -1,22 +1,20 @@
 export default defineNuxtConfig({
-  modules: [
-    // https://github.com/nuxt-modules/supabase
-    '@nuxtjs/supabase',
-    '@nuxtjs/tailwindcss',
-    'nuxt-icon',
-    '@nuxt/devtools',
-  ],
+  modules: [// https://github.com/nuxt-modules/supabase
+  '@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/devtools', "@nuxtjs/kinde"],
+
+  kinde: {
+    // This is true by default and adds 'auth-logged-in' and 'auth-logged-out'
+    // middleware to your Nuxt application.
+    // 
+    // middleware: false,
+    //
+    // enable the debug `/api/health` endpoint
+    // debug: true,
+  },
 
   runtimeConfig: {
     public: {
       baseUrl: process.env.BASE_URL || 'http://localhost:3000'
-    },
-  },
-
-  supabase: {
-    redirectOptions: {
-      login: '/',
-      callback: '/confirm'
     },
   },
 
@@ -62,5 +60,7 @@ export default defineNuxtConfig({
 
   devtools: {
     enabled: true
-  }
+  },
+
+  compatibilityDate: '2024-07-13'
 })

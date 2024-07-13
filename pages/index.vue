@@ -145,7 +145,7 @@ useHead({
                 <p class="mt-2 text-base font-sans text-gray-600 dark:text-gray-200 sm:text-lg md:text-normal">
                     Deine Daten liegen in Deutschland. Einerseits garantiert das schnelle Reaktionszeiten (Ping),
                     andererseits garantiert es, dass deine Daten mit EU Datenschutzgesetzen geschützt sind. <br>
-                    Um noch ein Stück genauer zu werden: Deine Daten liegen auf einem Server von Stuxhost in Falkenstein.
+                    Um noch ein Stück genauer zu werden: Deine Daten liegen auf einem Server von Contabo, in Frankfurt.
                 </p>
             </div>
             <div
@@ -160,17 +160,6 @@ useHead({
                         href="https://docs.awesomebible.de/myawesomebible/vision/">
                         Mehr über Geld, und wie es weiter geht erfährst du hier.
                     </a>
-                </p>
-            </div>
-            <div
-                class="w-full px-6 py-6 mx-auto mt-10 bg-white dark:bg-blue-900 border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3">
-                <h3 class="text-lg font-bold text-purple-500 dark:text-purple-200 sm:text-xl md:text-2xl">Ist
-                    my.awesomeBible unsicher weil der Quellcode offen liegt?</h3>
-                <p class="mt-2 text-base font-sans text-gray-600 dark:text-gray-200 sm:text-lg md:text-normal">
-                    Nein. Das ist ein Mythos - sogar das Gegenteil ist der Fall. Wäre der Quellcode nicht offen, dann wäre
-                    allein ich für die Sicherheit verantwortlich. <br>
-                    Da er aber quelloffen ist, kann jeder Fehler finden und ausnutzen - aber genau so gut können sie
-                    gemeldet und behoben werden.
                 </p>
             </div>
             <div id="contact"

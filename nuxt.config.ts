@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   modules: [
-  '@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/devtools', "@nuxtjs/kinde"
+  '@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxt/devtools', "@nuxtjs/kinde"
 ],
 
   kinde: {

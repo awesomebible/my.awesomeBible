@@ -18,7 +18,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@vite-pwa/nuxt": "^0.10.5",
     "daisyui": "^4.12.13",
-    "nuxt": "^3.13.2",
+    "nuxt": "^3.16.0",
     "webpack": "^5.95.0"
   },
   "packageManager": "pnpm@8.15.6+sha1.8105075ad0aa306138be128c017e9c41e28ecffa",
